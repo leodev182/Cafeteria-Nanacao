@@ -6,7 +6,7 @@ describe("Operaciones CRUD de cafes", () => {
     const response = await request(server).get("/cafes").send();
     // console.log(`El cuerpo de la respuesta es: ${response.body}`);
     const status = response.statusCode;
-    console.log(`El Status es: ${status}`);
+    // console.log(`El Status es: ${status}`);
     expect(status).toBe(200);
     //-Se aplica el método nativo de JS isArray, para verificar si es un array y esto retorna true o false
     //- el resultado retornado es lo que se compara de manera estricta con el toBe
